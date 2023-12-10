@@ -97,7 +97,7 @@ _Gün Sonu_
 
 <!-- Kişisel yorum -->
 
-## 7- Evet şu anda App Router için 1 proje ve Pages Router için 1 proje oluşturdum. Ve şimdi bu projeleri bilgisayarımda nasıl çalıştırabilirim?
+## 7- Evet şu anda App Router için 1 proje ve Page Router için 1 proje oluşturdum. Ve şimdi bu projeleri bilgisayarımda nasıl çalıştırabilirim?
 Bu projeleri çalıştırabilmek için çalıştırmak istenilen projenin ana dizinini editör(VSCode gibi) ile açmak gerekir. Daha sona editör teminaline aşağıdaki komut yazılmalıdır. Komut çalıştırıldıktan kısa bir süre sonra varsayılan port değiştiilmediyse proje "http://localhost:3000/" portunda çalışacaktır.
 
 ```bash
@@ -105,9 +105,9 @@ npm run dev
 # NextJS projesini http://localhost:3000/ portunda çalıştırmak için - npm ile
 ```
 
-## 8- İki farklı projeyide çalıştırdım. Ve şimdi iki proje için ayrı ayrı "about" adında bir route oluşturma istiyorum. Bunu nasıl yapabilirim?
+## 8- İki farklı projeyide çalıştırdım. Ve şimdi iki proje için ayrı ayrı "about" adında bir route oluşturmak istiyorum. Bunu nasıl yapabilirim?
 
-Bu soruya cevap vermeden önce 2 projeninde, proje oluşturduktan sonraki `src/` dizinindeki başlangıç klasör ve dosyalarını inceleyelim.
+Bu soruya cevap vermeden önce 2 projeninde, proje oluşturulduktan sonraki `src/` dizinindeki başlangıç klasör ve dosyalarını inceleyelim.
 
 ### App Router - başlangıçta `src/` dizini
 ```
@@ -145,3 +145,42 @@ src/
   - İkinci yöntem: `src/pages/` dizini içerisine içerisine __about__ adında bir klasör açılmalı ve bu klasör içerisine __index.js__ adında dosya açılmalı ve bu dosya içerisi gereklilik doğrultusunda doldurulmalıdır. Klasör adı ya camelCase ya da kebap-case formatında olmalıdır. Ayrıca url'deki path kısmı dosya adına karşılık gelir.
 
 ## 9- Her iki proje için "about" adında route oluşturduktan sonra yine her iki proje için "contact" adında route oluşturdum. Ve route'lere ait path'leri url kısmına yazdığımda yönlendirme gerçekten başarılı. Fakat ben bu noktada "about" sayfasındaysam bir button olsun, butona bastığımda "contact" sayfasına gideyim. "contact" sayfasındaysam yine bir buton olsun ve butona bastığımda "about" sayfasına gideyim. Bunu nasıl yapabilirim? Bunun standartı nedir? 
+Next.js'de rotalar arasında gezinmenin iki yolu vardır:
+
+- __Link__ bileşenini kullanma
+- __userRouter__ hook'unu kullanma
+- **[Daha detaylı bilgi için tıkla ](https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating)**
+
+### Link ne zaman kullanılmalı? Nasıl kullanılır?
+- Sayfalar arasında gezinmelerde kullanılabilir.
+- Daha hızlı gezinme sağlamak için kullanılabilir.
+- Örnek kullanım aşağıdadır.
+
+```jsx
+import Link from 'next/link'
+ 
+export default function Contact() {
+  return <Link href="/about">Go to about page</Link>
+}
+```
+
+### userRouter ne zaman kullanılmalı?
+- Bir olayın tetiklenmesi veya bir formun gönderilmesi durumunda sayfa değiştirmek istediğinizde kullanılabilir.
+- Bağlantı oluşturmak yerine sayfa değiştirmenin gerektiği durumlarda kullanışlıdır.
+- Örnek kullanım aşağıdadır.
+
+```jsx
+'use client';
+
+import { useRouter } from 'next/navigation'
+ 
+export default function About() {
+  const router = useRouter()
+ 
+  return (
+    <button type="button" onClick={() => router.push('/contact')}>
+      Go to contact page
+    </button>
+  )
+}
+```
