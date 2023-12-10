@@ -92,3 +92,56 @@ _Evet! neredeyse ilk bölümün sonuna geldim ve bu noktadan sonra 2 farklı pro
 _Gün Sonu_
 
 <!-- Kişisel yorum -->
+
+<!-- Kişisel yorum -->
+
+<!-- Kişisel yorum -->
+
+## 7- Evet şu anda App Router için 1 proje ve Pages Router için 1 proje oluşturdum. Ve şimdi bu projeleri bilgisayarımda nasıl çalıştırabilirim?
+Bu projeleri çalıştırabilmek için çalıştırmak istenilen projenin ana dizinini editör(VSCode gibi) ile açmak gerekir. Daha sona editör teminaline aşağıdaki komut yazılmalıdır. Komut çalıştırıldıktan kısa bir süre sonra varsayılan port değiştiilmediyse proje "http://localhost:3000/" portunda çalışacaktır.
+
+```bash
+npm run dev   
+# NextJS projesini http://localhost:3000/ portunda çalıştırmak için - npm ile
+```
+
+## 8- İki farklı projeyide çalıştırdım. Ve şimdi iki proje için ayrı ayrı "about" adında bir route oluşturma istiyorum. Bunu nasıl yapabilirim?
+
+Bu soruya cevap vermeden önce 2 projeninde, proje oluşturduktan sonraki `src/` dizinindeki başlangıç klasör ve dosyalarını inceleyelim.
+
+### App Router - başlangıçta `src/` dizini
+```
+src/
+├─ app/
+│  ├─ favicon.ico
+│  ├─ globals.css
+│  ├─ layout.js
+│  ├─ page.js
+```
+- Burada page.js ve layout.js projenin kök kısmını temsil eder. "http://localhost:3000/" gibi...
+- Özellikle page.js dosyası "http://localhost:3000/" deki çıktının karşılığıdır.
+
+### Page Router - başlangıçta `src/` dizini
+```
+src/
+├─ pages/
+│  ├─ api/
+│  ├─ _app.js
+│  ├─ _document.js
+│  ├─ index.js
+├─ styles/
+│  ├─ globals.css
+```
+- Burada index.js projenin kök kısmını temsil eder. "http://localhost:3000/" gibi...
+- Ekrandaki çıktının karşılığı yine index.js dosyasındadır.
+
+### App Router - "about" route oluşturma ("http://localhost:3000/about" gibi)
+- Böyle bir route oluşturmak için `src/app/` dizininin içerisine __about__ adında klasör açılmalı. Klasör adı ya camelCase ya da kebap-case formatında olmalıdır. Ayrıca url'deki path kısmı dosya adına karşılık gelir.
+- __about__ klasörünün içeriside de __page.js__ adında bi dosya açılmalı ve bu dosya içerisi gereklilik doğrultusunda doldurulmalı.
+
+### Page Router - "about" route oluşturma ("http://localhost:3000/about" gibi)
+- Böyle bir route oluşturmak için iki farklı yöntem bulunur.
+  - Birinci yöntem: `src/pages/` dizini içerisine  __about.js__ adında bir dosya açılmalı ve bu dosya içerisi gereklilik doğrultusunda doldurulmalıdır. Dosya adı ya camelCase ya da kebap-case formatında olmalıdır. Ayrıca url'deki path kısmı dosya adına karşılık gelir.
+  - İkinci yöntem: `src/pages/` dizini içerisine içerisine __about__ adında bir klasör açılmalı ve bu klasör içerisine __index.js__ adında dosya açılmalı ve bu dosya içerisi gereklilik doğrultusunda doldurulmalıdır. Klasör adı ya camelCase ya da kebap-case formatında olmalıdır. Ayrıca url'deki path kısmı dosya adına karşılık gelir.
+
+## 9- Her iki proje için "about" adında route oluşturduktan sonra yine her iki proje için "contact" adında route oluşturdum. Ve route'lere ait path'leri url kısmına yazdığımda yönlendirme gerçekten başarılı. Fakat ben bu noktada "about" sayfasındaysam bir button olsun, butona bastığımda "contact" sayfasına gideyim. "contact" sayfasındaysam yine bir buton olsun ve butona bastığımda "about" sayfasına gideyim. Bunu nasıl yapabilirim? Bunun standartı nedir? 
