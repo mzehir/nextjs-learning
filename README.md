@@ -1,10 +1,10 @@
 # NextJS Öğrenme Yolundaki Karalama Defteri
 
-_9/12/2023 günü itibariyle NextJS öğrenmeye karar verdim. Ve bu yolda rehber olarak ise NextJS dökümantasyonunu seçtim. Tabi bu demek değil ki NextJS ile ilgili diğer makale ve paylaşımları okumayacağım. Bazı noktalarda bu tür paylaşımlara da başvuracağım._
+_9/12/2023 günü itibariyle NextJS öğrenmeye karar verdim. Ve bu yolda rehber olarak ise NextJS dökümanını seçtim. Tabi bu demek değil ki NextJS ile ilgili diğer makale ve paylaşımları okumayacağım. Bazı noktalarda bu tür paylaşımlara da başvuracağım._
 
-_Ayrıca bu Markdown dosyası defterin sadece 1.bölümünü oluşturacak. Burada "konuya giriş" ile ilgili notlar yazacağım. Belki planlama notlarıda buraya yazabilirim._
+_Ayrıca bu Markdown dosyası defterin sadece 1.bölümünü oluşturacak. İhtiyaç halinde yeni markdown dosyaları da açacağım._
 
-_Bu bölümdeki notlarımı soru-cevap şeklinde tutayım._
+_Ve bu karalama defterinde notlarımı soru-cevap şeklinde tutacağım._
 
 ## 1- NextJS nedir?
 
@@ -12,7 +12,7 @@ NextJS, web uygulamaları oluşturma noktasında yapı taşları sağlayan bir r
 
 ## 2- Peki NextJS ne işe yarar? yada neden NextJS kullanmalıyım?
 
-NextJS ve React.js kullanarak SSR (Server Side Rendering) işlemi yapabilen web uygulamaları geliştirebilir. Böylelikle SSR, performans ve SEO avantajları sağlar ve React.js'te yapılandırması karmaşık olan SSR işlemini NextJS basitleştirir.
+NextJS ve React.js kullanarak SSR (Server Side Rendering) işlemi yapabilen web uygulamaları geliştirebilirsin. Böylelikle SSR, performans ve SEO gibi konularda avantaj sağlar ve React.js'te yapılandırması karmaşık olan SSR işlemini NextJS ile daha basit bir şekilde yaparsın.
 
 ## 3- Peki SSR(Server Side Rendering) ve CSR(Client Side Rendering) nedir?
 
@@ -32,16 +32,16 @@ Bu sayede hem performans açısından kazanım sağlarken diğer yandan dinamik 
 
 ## 4- Gerçekten ikna oldum. Peki şu anda yerel bilgisayarımda bir NextJS projesini nasıl başlatırım?
 
-Bu sorunun cevabını verirken yerel bilgisayarda hali hazırda zaten react ile proje geliştirildiğini ve herhangi bir kodlama editörü kullanıldığını varsayarak veriyorum.
+Bu sorunun cevabını verirken bilgisayarında hali hazırda zaten react ile proje geliştirildiğini ve herhangi bir kodlama editörü kullanıldığını varsayarak veriyorum.
 
-- İlk olarak yerel makinanın nodeJS sürümü kontrol edilmeli. Çünkü NextJS kurabilmek için mevcut nodeJS sürümünün en az **"18.17"** olması gerekir. nodeJS versiyon kontrolü için cmd ekranına aşağıdaki sorgu yazılabilir. Ve şayet versiyon güncellenmeye ihtiyaç varsa **[buradan](https://nodejs.org/en)** güncellenebilir.
+- İlk olarak bilgisayarının nodeJS sürümünü kontrol etmelisin. Çünkü NextJS kurabilmek için mevcut nodeJS sürümünün en az **"18.17"** olması gerekir. nodeJS versiyon kontrolü için cmd ekranına aşağıdaki sorguyu yazabilirsin. Ve şayet versiyon güncellenmeye ihtiyaç varsa **[buradan](https://nodejs.org/en)** güncelleyebilirsin.
 
 ```bash
 node -v
 # cmd penceresi nodeJS version konrolü
 ```
 
-- Artık nodeJS versiyonu uygunsa editörden NextJS projesinin oluşturalacağı dosya yolu seçilmeli ve editör termineline aşağıdaki komut yazılmalıdır.
+- Artık nodeJS versiyonun uygunsa editörden NextJS projesinin oluşturalacağı dosya yolunu seçmelisin ve editör termineline aşağıdaki komutu yazmalısın.
 
 ```bash
 npx create-next-app@latest
@@ -76,32 +76,21 @@ Evet haklısın bu konu bir çok kişinin kafasının karıştığı, kararsız 
 
 ### Sonuç
 
-Dökümanda iki seçenek için yapılan açıklamalar belirleyici bir rol oynamasda, bu noktada iki farklı seçenek için iki faklı proje ile yola devam edilebilir. Sonuçta bu bir "NextJS Öğrenme Yolundaki Karalama Defteri".
+Dökümanda iki seçenek için yapılan açıklamalar belirleyici bir rol oynamasada, bu noktada iki farklı seçenek için iki faklı proje ile yola devam edebilirsin. Sonuçta bu bir "NextJS Öğrenme Yolundaki Karalama Defteri".
 
-Ayrıca bu soru ile ilgili hemen aşağıda paylaştığım yazılar ve tartışmalar incelenebilir.
+Ayrıca bu soru ile ilgili hemen aşağıda paylaştığım yazıları ve tartışmaları da incelenebilirsin.
 
 - [stackoverflow](https://stackoverflow.com/questions/76570208/what-is-different-between-app-router-and-pages-router-in-next-js)
 - [reddit](https://stackoverflow.com/questions/76570208/what-is-different-between-app-router-and-pages-router-in-next-js)
 - [linkedin](https://www.linkedin.com/pulse/exploring-evolution-nextjs-13-app-router-vs-page-louis-nwadike/)
 - [medium](https://medium.com/@jawaragordon/choose-your-own-adventure-next-js-app-vs-pages-router-528dbf25b37f)
 
-<!-- Kişisel yorum -->
-
-_Evet! neredeyse ilk bölümün sonuna geldim ve bu noktadan sonra 2 farklı proje ve bu projelerde "about" adında bir router oluşturayım. Aynı zamanda bu işlemleri yaparken küçük notlar almaya devam edeyim._
-
-_Gün Sonu_
-
-<!-- Kişisel yorum -->
-
-<!-- Kişisel yorum -->
-
-<!-- Kişisel yorum -->
-
 ## 7- Evet şu anda App Router için 1 proje ve Page Router için 1 proje oluşturdum. Ve şimdi bu projeleri bilgisayarımda nasıl çalıştırabilirim?
-Bu projeleri çalıştırabilmek için çalıştırmak istenilen projenin ana dizinini editör(VSCode gibi) ile açmak gerekir. Daha sona editör teminaline aşağıdaki komut yazılmalıdır. Komut çalıştırıldıktan kısa bir süre sonra varsayılan port değiştiilmediyse proje "http://localhost:3000/" portunda çalışacaktır.
+
+Bu projeleri bilgisayarında çalıştırabilmek için çalıştırmak istediğin projenin ana dizinini, editör(VSCode gibi) ile açman gerekir. Daha sona editör terminalinde aşağıdaki komutu çalıştırmalısın. Komut çalıştırıldıktan kısa bir süre sonra varsayılan port değiştirilmediyse proje "http://localhost:3000/" portunda çalışacaktır.
 
 ```bash
-npm run dev   
+npm run dev
 # NextJS projesini http://localhost:3000/ portunda çalıştırmak için - npm ile
 ```
 
@@ -110,6 +99,7 @@ npm run dev
 Bu soruya cevap vermeden önce 2 projeninde, proje oluşturulduktan sonraki `src/` dizinindeki başlangıç klasör ve dosyalarını inceleyelim.
 
 ### App Router - başlangıçta `src/` dizini
+
 ```
 src/
 ├─ app/
@@ -118,10 +108,12 @@ src/
 │  ├─ layout.js
 │  ├─ page.js
 ```
-- Burada page.js ve layout.js projenin kök kısmını temsil eder. "http://localhost:3000/" gibi...
-- Özellikle page.js dosyası "http://localhost:3000/" deki çıktının karşılığıdır.
+
+- Burada **page.js** ve **layout.js** projenin kök kısmını temsil eder. "http://localhost:3000/" gibi...
+- **page.js** dosyası "http://localhost:3000/" deki çıktının karşılığıdır.
 
 ### Page Router - başlangıçta `src/` dizini
+
 ```
 src/
 ├─ pages/
@@ -132,55 +124,265 @@ src/
 ├─ styles/
 │  ├─ globals.css
 ```
-- Burada index.js projenin kök kısmını temsil eder. "http://localhost:3000/" gibi...
-- Ekrandaki çıktının karşılığı yine index.js dosyasındadır.
+
+- Burada **index.js** projenin kök kısmını temsil eder. "http://localhost:3000/" gibi...
+- Ekrandaki çıktının karşılığı yine **index.js** dosyasındadır.
 
 ### App Router - "about" route oluşturma ("http://localhost:3000/about" gibi)
-- Böyle bir route oluşturmak için `src/app/` dizininin içerisine __about__ adında klasör açılmalı. Klasör adı ya camelCase ya da kebap-case formatında olmalıdır. Ayrıca url'deki path kısmı dosya adına karşılık gelir.
-- __about__ klasörünün içeriside de __page.js__ adında bi dosya açılmalı ve bu dosya içerisi gereklilik doğrultusunda doldurulmalı.
+
+- Böyle bir route oluşturmak için `src/app/` dizininin içerisine **about** adında klasör açmalısın. Klasör adı ya camelCase ya da kebap-case formatında olmalıdır. Ayrıca url'deki path kısmı dosya adına karşılık gelir.
+- Daha sonra**about** klasörünün içerisine de **page.js** adında bir dosya açmalısın ve bu dosyanın içerisini ihtiyacın doğrultusunda doldurmalısın.
 
 ### Page Router - "about" route oluşturma ("http://localhost:3000/about" gibi)
-- Böyle bir route oluşturmak için iki farklı yöntem bulunur.
-  - Birinci yöntem: `src/pages/` dizini içerisine  __about.js__ adında bir dosya açılmalı ve bu dosya içerisi gereklilik doğrultusunda doldurulmalıdır. Dosya adı ya camelCase ya da kebap-case formatında olmalıdır. Ayrıca url'deki path kısmı dosya adına karşılık gelir.
-  - İkinci yöntem: `src/pages/` dizini içerisine içerisine __about__ adında bir klasör açılmalı ve bu klasör içerisine __index.js__ adında dosya açılmalı ve bu dosya içerisi gereklilik doğrultusunda doldurulmalıdır. Klasör adı ya camelCase ya da kebap-case formatında olmalıdır. Ayrıca url'deki path kısmı dosya adına karşılık gelir.
 
-## 9- Her iki proje için "about" adında route oluşturduktan sonra yine her iki proje için "contact" adında route oluşturdum. Ve route'lere ait path'leri url kısmına yazdığımda yönlendirme gerçekten başarılı. Fakat ben bu noktada "about" sayfasındaysam bir button olsun, butona bastığımda "contact" sayfasına gideyim. "contact" sayfasındaysam yine bir buton olsun ve butona bastığımda "about" sayfasına gideyim. Bunu nasıl yapabilirim? Bunun standartı nedir? 
+- Böyle bir route oluşturmak için iki farklı yöntem vardır.
+  - Birinci yöntem: `src/pages/` dizini içerisine **about.js** adında bir dosya açmalısın ve bu dosya içerisini ihtiyacın doğrultusunda doldurmalısın. Dosya adı ya camelCase ya da kebap-case formatında olmalıdır. Ayrıca url'deki path kısmı dosya adına karşılık gelir.
+  - İkinci yöntem: `src/pages/` dizini içerisine **about** adında bir klasör açmalısın ve bu klasör içerisine **index.js** adında dosya açmalısın ve bu dosya içerisini ihtiyacın doğrultusunda doldurmalısın. Klasör adı ya camelCase ya da kebap-case formatında olmalıdır. Ayrıca url'deki path kısmı dosya adına karşılık gelir.
+
+## 9- Her iki proje için "about" adında route oluşturduktan sonra yine her iki proje için "contact" adında route oluşturdum. Ve route'lere ait path'leri url kısmına yazdığımda yönlendirme gerçekten başarılı. Fakat ben bu noktada "about" sayfasındaysam bir button olsun, butona bastığımda "contact" sayfasına gideyim. "contact" sayfasındaysam yine bir buton olsun ve butona bastığımda "about" sayfasına gideyim. Bunu nasıl yapabilirim? Bunun standartı nedir?
+
 Next.js'de rotalar arasında gezinmenin iki yolu vardır:
 
-- __Link__ bileşenini kullanma
-- __userRouter__ hook'unu kullanma
+- **Link** bileşenini kullanma
+- **userRouter** hook'unu kullanma
 - **[Daha detaylı bilgi için tıkla ](https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating)**
 
-### Link ne zaman kullanılmalı? Nasıl kullanılır?
+### Link bileşeni ne zaman kullanılmalıdır? Nasıl kullanılır?
+
 - Sayfalar arasında gezinmelerde kullanılabilir.
 - Daha hızlı gezinme sağlamak için kullanılabilir.
 - Örnek kullanım aşağıdadır.
 
 ```jsx
-import Link from 'next/link'
- 
+import Link from "next/link";
+
 export default function Contact() {
-  return <Link href="/about">Go to about page</Link>
+  return <Link href="/about">Go to about page</Link>;
 }
 ```
 
-### userRouter ne zaman kullanılmalı?
-- Bir olayın tetiklenmesi veya bir formun gönderilmesi durumunda sayfa değiştirmek istediğinizde kullanılabilir.
-- Bağlantı oluşturmak yerine sayfa değiştirmenin gerektiği durumlarda kullanışlıdır.
+### userRouter hook'u ne zaman kullanılmalıdır? Nasıl kullanılır?
+
+- Bir olayın tetiklenmesi veya bir formun gönderilmesi durumunda sayfa değiştirmek istediğinizde kullanabilirsiniz.
+- Bağlantı oluşturmak yerine sayfa değiştirmenin gerektiği durumlarda kullanabilirsiniz.
 - Örnek kullanım aşağıdadır.
 
 ```jsx
-'use client';
+"use client";
 
-import { useRouter } from 'next/navigation'
- 
+import { useRouter } from "next/navigation";
+
 export default function About() {
-  const router = useRouter()
- 
+  const router = useRouter();
+
   return (
-    <button type="button" onClick={() => router.push('/contact')}>
+    <button type="button" onClick={() => router.push("/contact")}>
       Go to contact page
     </button>
-  )
+  );
 }
 ```
+
+## 10- Evet yönlendirmeler istediğim gibi çalışıyor. Fakat şu anda "users" adında bir sayfa yapmak istiyorum. Bu sayfada bir liste göstereceğim. Ve liste satırlarında her satır için buton olacak ve ben herhangi bir satırın butonuna tıkladığım zaman "http://localhost:3000/users/userId" sayfasına gitmek istiyorum. Buradaki "userId" yerinde, tıkladığım satırdaki kullanıcının id'si yazmalı. Aslında benim burada sormak istediğim dinamik bir route nasıl oluşturabilirim? Ve böyle bir durumda yönlendirme işlemini nasıl yapabilirim?
+
+Bu sorunun cevabını adım adım cevaplandırmak lazım. Öncelikle yapacaklarımızı sıralayalım.
+
+- 1- Öncelikle **users** adında bir sayfa oluşturmalısın.
+
+  Bunun için `src/app` dizinine **users** adında bir klasör açalım. Daha sonra **users** klasörü içerisine **page.js** adında bir dosya açalım. (Zaten buraya kadar olan kısmı öğrenmiştik.) Daha sonra bu dosyanın içerisine aşağıdaki kod bloğunu ekleyelim. Ya da kendi ihtiyacımız doğrultusunda dolduralım
+
+  ```jsx
+  // src/app/users/page.js
+  "use client";
+
+  import React from "react";
+  import Link from "next/link";
+
+  let usersData = [
+    {
+      id: "1000001",
+      name: "Mümin",
+      surname: "Zehir",
+    },
+    {
+      id: "1000002",
+      name: "Ahmet Faruk",
+      surname: "Turgut",
+    },
+  ];
+
+  const Users = () => {
+    return (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100vh",
+          width: "100%",
+        }}
+      >
+        <h1>App Router Users Page</h1>
+
+        <br />
+
+        <table style={{ border: "1px solid white" }}>
+          <thead>
+            <tr>
+              <th style={{ border: "1px solid white", padding: "50px" }}>
+                Name
+              </th>
+              <th style={{ border: "1px solid white", padding: "50px" }}>
+                Surname
+              </th>
+              <th style={{ border: "1px solid white", padding: "50px" }}>*</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {usersData.map((item, index) => (
+              <tr key={index.toString()}>
+                <th style={{ border: "1px solid white" }}>{item.name}</th>
+                <th style={{ border: "1px solid white" }}>{item.surname}</th>
+                <th style={{ border: "1px solid white", padding: "50px" }}>
+                  <Link
+                    href={`/users/${item.id}`}
+                    className="bg-green-400 w-fit rounded-lg p-4"
+                  >
+                    Detaya git
+                  </Link>
+                </th>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  };
+
+  export default Users;
+  ```
+
+  Yukarıdaki kod bloğunu görüntüleyebilmek için adres çubuğuna "http://localhost:3000/users" yazman yeterlidir. Ve sorduğun sorudaki "http://localhost:3000/users/userId" yolunun _users_ kısmını tamamlamış olduk. Şimdi gelelim dinamik route olan _userId_ path'inin yapımına.
+
+- 2- `src/app/users/` dizinine **[userId]** adında bir klasör açalım. Ve klasör ismini gerçekten köşeli parantez ile yaz. Daha sonra oluşturduğumuz klasör içerisine **page.js** adında bir dosya açalım. Daha sonra bu dosyanın içerisine aşağıdaki kod bloğunu ekleyelim. Ya da kendi ihtiyacımız doğrultusunda dolduralım.
+
+  ```jsx
+  "use client";
+
+  import React from "react";
+
+  const UserDetail = (props) => {
+    console.log(props);
+
+    return <div>UserDetail</div>;
+  };
+
+  export default UserDetail;
+  ```
+
+Yukarıdaki talimatları izleyerek kullanıcıların listelendiği ve belirli bir kullanıcının detaylarının gösterildiği sayfaları yapmak aslında bu kadar kolay. Ayrıca **UserDetail** bileşeninde konsola yazılan props değerini incelemekte fayda var. Bu konu ile alakalı daha detaylı bilgi için aşağıdaki websitelerini ziyaret edebilirsin.
+
+- [nextjs - dynamic-routes](https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes)
+- [nextjs - linking-and-navigating](https://nextjs.org/docs/pages/building-your-application/routing/linking-and-navigating)
+- [nextjs - page](https://nextjs.org/docs/app/api-reference/file-conventions/page)
+- [stackoverflow](https://stackoverflow.com/questions/74570835/how-to-do-dynamic-routes-with-nextjs-13)
+
+## 11- Hemen yukarıdaki soru için verdiğin cevap **app router** için geçerli sanırım. Ben aynı işlemleri **page router** ile nasıl yapacağım?
+
+Aslında bu soruya verilecek olan cevap yukarıdaki soruya verilen cevapla hemen hemen aynı. Ama farklılıklarda var.
+
+- 1- İlk olarak `src/pages` dizinine **users** adında bir klasör açalım. Daha sonra **users** klasörü içerisine **index.js** adında bir dosya açalım. (Zaten buraya kadar olan kısmı öğrenmiştik.) Daha sonra bu dosyanın içerisine aşağıdaki kod bloğunu ekleyelim. Ya da kendi ihtiyacımız doğrultusunda dolduralım.
+
+  ```jsx
+  // src/pages/users/index.js
+  "use client";
+
+  import React from "react";
+  import Link from "next/link";
+
+  let usersData = [
+    {
+      id: "1000001",
+      name: "Mümin",
+      surname: "Zehir",
+    },
+    {
+      id: "1000002",
+      name: "Ahmet Faruk",
+      surname: "Turgut",
+    },
+  ];
+
+  const Users = () => {
+    return (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100vh",
+          width: "100%",
+        }}
+      >
+        <h1>Page Router Users Page</h1>
+
+        <br />
+
+        <table style={{ border: "1px solid white" }}>
+          <thead>
+            <tr>
+              <th style={{ border: "1px solid white", padding: "50px" }}>
+                Name
+              </th>
+              <th style={{ border: "1px solid white", padding: "50px" }}>
+                Surname
+              </th>
+              <th style={{ border: "1px solid white", padding: "50px" }}>*</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {usersData.map((item, index) => (
+              <tr key={index.toString()}>
+                <th style={{ border: "1px solid white" }}>{item.name}</th>
+                <th style={{ border: "1px solid white" }}>{item.surname}</th>
+                <th style={{ border: "1px solid white", padding: "50px" }}>
+                  <Link
+                    href={`/users/${item.id}`}
+                    className="bg-green-400 w-fit rounded-lg p-4"
+                  >
+                    Detaya git
+                  </Link>
+                </th>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  };
+
+  export default Users;
+  ```
+
+- 2- Daha sonra `src/pages` dizinine **[userId].js** adında bir dosya açalım. Ve dosyanın içerisine aşağıdaki kod bloğunu ekleyelim. Ya da kendi ihtiyacımız doğrultusunda dolduralım.
+
+  ```jsx
+  import React from "react";
+  import { useRouter } from "next/router";
+
+  const UserDetail = () => {
+    const router = useRouter();
+
+    console.log(router);
+
+    return <div>Page Router - User detail</div>;
+  };
+
+  export default UserDetail;
+  ```
+
+İşte yukarıdaki gibi **page router** ile dinamik bir rota oluşturmuş ve görüntülemesini yapmış oluruz. Eğer 10.sorunun cevabındaki gibi **UserDetail** bileşenini dinamik klasör içerisinde oluştumak istersek, users klasörü içerisine **userId** adında bir klasör açmalıyız. Bu klasörün içerisine **index.js** adında bir dosya açmalıyız. Daha sonra yukarıdaki kodlamaları **index.js** dosyası içerisine yazmalıyız.
